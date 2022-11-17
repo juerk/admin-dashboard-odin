@@ -1,0 +1,249 @@
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+.maincontainer {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 13fr;
+}
+
+.sidebar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: darkolivegreen;
+  max-width: 400px;
+}
+
+.searchheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: grey;
+}
+
+.leftsearch {
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  background-color: grey;
+}
+
+.leftsearch input {
+  width: 300px;
+  border-radius: 30px;
+  background-color: bisque;
+  border: none;
+
+}
+.rightsearch {
+  margin-right: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  background-color: grey;
+}
+
+
+
+.navheader {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  background-color: grey;
+  display: flex;
+}
+
+.leftnav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  gap: 10px;
+}
+
+.hithere {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightnav {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  padding-right: 15px;
+}
+
+.rightnav button {
+  height: 30px;
+  width: 70px;
+  color: white;
+  background-color: darkolivegreen;
+  border: none;
+  border-radius: 20px;
+}
+
+.projectsection {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  background-color: lightgrey;
+
+}
+
+.projectboxes {
+  height: 80vh;
+  gap: 15px;
+  margin: 15px;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+}
+
+.projectboxes div {
+  background-color: white;
+  border-left: 5px gold solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#projecticons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+#yourprojects {
+  position: relative;
+  top: 10px;
+  margin: 15px;
+}
+
+.trending{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: lightgrey;
+  display: grid;
+  grid-template-rows: 30px 6fr 30px 6fr;
+  padding-bottom: 35px;
+  padding-right: 35px;
+}
+
+.trending span {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.announcementsbox {
+  margin-top: 5px;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.announcementsbox > div {
+  border-bottom: solid 1px darkolivegreen;
+}
+
+.trendingbox {
+  margin-top: 5px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px;
+  
+}
+
+.trendingbox div {
+  display: flex;
+  gap: 10px;
+}
+
+.dashboard {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding: 10px;
+  gap: 10px;
+  background-color: darkolivegreen;
+
+}
+.navul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: darkolivegreen;
+
+}
+.ultext {
+  padding: 5px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  position: relative;
+  right: 30px;
+
+}
+.ultext li {
+  height: 25px;
+}
+.ulavi li {
+  height: 25px;
+}
+.ulavi {
+  position: relative;
+  right: 30px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 6;
+
+}
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+li {
+  color: white;
+}
+
+.avatar1 img{
+  width: 30px;
+}
+
+.avatar2 img{
+  width: 50px;
+}
